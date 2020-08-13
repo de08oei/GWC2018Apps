@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Food_Allergy_Awareness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Allergy Awareness" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIN-0j-iGS">
+                                <rect key="frame" x="19.666666666666657" y="106.66666666666667" width="375" height="135.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="ogv-5h-w8l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="58"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fO-di-IM2">
+                                <rect key="frame" x="152" y="525" width="110" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qOP-Qp-9yP" kind="show" id="cQo-MH-riy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caution tape" translatesAutoresizingMaskIntoConstraints="NO" id="i2s-fG-Dw3">
+                                <rect key="frame" x="69.666666666666686" y="265" width="275" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="Cxo-7i-6aY"/>
+                                    <constraint firstAttribute="height" constant="206" id="lSx-xO-vRf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.396078431372549" green="0.80392156862745101" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0fO-di-IM2" firstAttribute="top" secondItem="i2s-fG-Dw3" secondAttribute="bottom" constant="54" id="1fx-bc-kNW"/>
+                            <constraint firstItem="0fO-di-IM2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FEc-wO-0Gs"/>
+                            <constraint firstItem="i2s-fG-Dw3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OcG-n7-JdD"/>
+                            <constraint firstItem="OIN-0j-iGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PsP-43-hji"/>
+                            <constraint firstItem="i2s-fG-Dw3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lCd-ln-S1W"/>
+                            <constraint firstItem="i2s-fG-Dw3" firstAttribute="top" secondItem="OIN-0j-iGS" secondAttribute="bottom" constant="23" id="obr-G2-g1i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30.434782608695656" y="31.793478260869566"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="geO-WI-WEy">
+            <objects>
+                <viewController id="qOP-Qp-9yP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZKq-1P-yko">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is a Food Allergy?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn3-bT-Nfe">
+                                <rect key="frame" x="0.0" y="99" width="414" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quN-jW-6Lp">
+                                <rect key="frame" x="19.666666666666657" y="165" width="375" height="406"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="406" id="BAl-Zh-vDU"/>
+                                    <constraint firstAttribute="width" constant="375" id="RAr-sp-PSr"/>
+                                </constraints>
+                                <string key="text">A food allergy is a reaction in a body's immune system that occurs when a certain kind of food in ingested. The food that triggers this reaction depends on the individual. Some examples of reactions are hives, stomache aches, or swelling. Food allergies can be mild or even fatal.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAq-LX-4F9">
+                                <rect key="frame" x="74.666666666666686" y="656" width="265" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6BB-TM-dkh"/>
+                                    <constraint firstAttribute="width" constant="265" id="nuH-lZ-tb8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go back to title page">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qA9-26-svf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTM-iP-atI">
+                                <rect key="frame" x="84" y="495" width="246" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="QzN-ZR-vDm"/>
+                                    <constraint firstAttribute="width" constant="246" id="fBS-8k-lFu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Common Allergens">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S7s-3G-6xn" kind="show" id="CVa-jQ-2AI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41176470588235292" green="0.80392156862745101" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KAq-LX-4F9" firstAttribute="centerX" secondItem="ZKq-1P-yko" secondAttribute="centerX" id="5Xd-UC-qHN"/>
+                            <constraint firstItem="KAq-LX-4F9" firstAttribute="top" secondItem="quN-jW-6Lp" secondAttribute="bottom" constant="85" id="OOj-Jz-1tt"/>
+                            <constraint firstItem="quN-jW-6Lp" firstAttribute="leading" secondItem="hn3-bT-Nfe" secondAttribute="trailing" constant="-394.33333333333337" id="Txm-E0-Ar6"/>
+                            <constraint firstItem="yTM-iP-atI" firstAttribute="centerX" secondItem="ZKq-1P-yko" secondAttribute="centerX" id="VTr-3k-dF8"/>
+                            <constraint firstItem="quN-jW-6Lp" firstAttribute="top" secondItem="hn3-bT-Nfe" secondAttribute="bottom" constant="-56" id="ZYh-LV-WEu"/>
+                            <constraint firstItem="quN-jW-6Lp" firstAttribute="leading" secondItem="hn3-bT-Nfe" secondAttribute="trailing" constant="-394.33333333333337" id="aO5-7P-Zsx"/>
+                            <constraint firstItem="yTM-iP-atI" firstAttribute="top" secondItem="quN-jW-6Lp" secondAttribute="bottom" constant="-76" id="b8Q-cM-rmc"/>
+                            <constraint firstItem="hn3-bT-Nfe" firstAttribute="centerX" secondItem="ZKq-1P-yko" secondAttribute="centerX" id="m5h-JF-5ac"/>
+                            <constraint firstItem="quN-jW-6Lp" firstAttribute="centerX" secondItem="ZKq-1P-yko" secondAttribute="centerX" id="rif-0p-w3Q"/>
+                            <constraint firstItem="quN-jW-6Lp" firstAttribute="centerY" secondItem="ZKq-1P-yko" secondAttribute="centerY" id="rrb-Y5-nm2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J9K-Fq-jcM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCo-fb-JZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="32"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="325-ew-aPp">
+            <objects>
+                <viewController id="S7s-3G-6xn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vbw-n8-Zj6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The 8 Most Common Food Allergens" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9V-kx-0FF">
+                                <rect key="frame" x="0.0" y="51" width="414" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="ayw-Zz-3lt"/>
+                                    <constraint firstAttribute="width" constant="414" id="eK8-Ch-jCG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="91" id="yZS-Ze-vCX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="common eight" translatesAutoresizingMaskIntoConstraints="NO" id="R0T-5z-58Z">
+                                <rect key="frame" x="14" y="150" width="387" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="206" id="3zS-jg-CTk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="206" id="Lzd-G7-aZa"/>
+                                    <constraint firstAttribute="width" constant="387" id="sPN-gg-6j2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKp-2b-2zj">
+                                <rect key="frame" x="20" y="316" width="374" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="320" id="644-Dh-TKX"/>
+                                    <constraint firstAttribute="height" constant="320" id="KuY-me-ei5"/>
+                                    <constraint firstAttribute="width" constant="374" id="ov3-L9-8tX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="t2N-gj-G9O"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="t3J-1Q-aYT"/>
+                                </constraints>
+                                <string key="text">Peanuts, tree nuts, milk, eggs, wheat, soy, fish, and shellfish are the most common foods that will trigger an allergic reaction. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKn-MJ-FLu">
+                                <rect key="frame" x="160" y="641" width="94" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="dve-zG-RPc"/>
+                                    <constraint firstAttribute="height" constant="44" id="iq3-FO-GV0"/>
+                                    <constraint firstAttribute="width" constant="94" id="sbY-UJ-NiL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Go back">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qOP-Qp-9yP" kind="show" id="SI4-L2-FeI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42745098039215684" green="0.80392156862745101" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GKn-MJ-FLu" firstAttribute="top" secondItem="fKp-2b-2zj" secondAttribute="bottom" constant="5" id="61h-lw-lO4"/>
+                            <constraint firstItem="R0T-5z-58Z" firstAttribute="centerX" secondItem="vbw-n8-Zj6" secondAttribute="centerX" id="9v4-MF-HKZ"/>
+                            <constraint firstItem="GKn-MJ-FLu" firstAttribute="centerX" secondItem="vbw-n8-Zj6" secondAttribute="centerX" id="Fus-PU-4FU"/>
+                            <constraint firstItem="fKp-2b-2zj" firstAttribute="centerX" secondItem="vbw-n8-Zj6" secondAttribute="centerX" id="XTh-FM-e7J"/>
+                            <constraint firstItem="fKp-2b-2zj" firstAttribute="top" secondItem="F9V-kx-0FF" secondAttribute="bottom" constant="174" id="aW9-xe-peT"/>
+                            <constraint firstItem="fKp-2b-2zj" firstAttribute="top" secondItem="R0T-5z-58Z" secondAttribute="bottom" constant="-40" id="d8d-Z5-aV7"/>
+                            <constraint firstItem="F9V-kx-0FF" firstAttribute="centerX" secondItem="vbw-n8-Zj6" secondAttribute="centerX" id="xsN-b0-Amr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YYL-hp-8jc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09N-mv-qB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737.68115942029" y="31.793478260869566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="caution tape" width="275" height="183"/>
+        <image name="common eight" width="1024" height="482"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SI4-L2-FeI"/>
+    </inferredMetricsTieBreakers>
+</document>
